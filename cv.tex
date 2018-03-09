@@ -1,0 +1,198 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+% Comment the following line to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[sc,osf]{mathpazo}
+
+% In practice, I use the following font packages instead of mathpazo.
+% beramono provides a nice fixed-width font. xagaramon uses the
+% (commercial) Adobe Garamond font.
+%\usepackage[scaled=0.75]{beramono}
+%\usepackage[osf]{xagaramon}
+
+% Set your name here
+\def\name{Andrea Cadeddu }
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {Software Development, Software Architect},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large\sffamily\bfseries}
+\subsectionfont{\rmfamily\mdseries\itshape\large\sffamily}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \bf \name}
+
+\vspace{0.25in}
+{\Large \bf \sffamily Full-Stack Developer, Software Architect and Material Scientist}
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}[t]{0.5\textwidth}
+  \href{http://www.turinggroup.com}{Turing Group} \\
+  111 W. Jackson\\
+Chicago, IL 60606
+  USA \\
+  Date of Birth: October 21, 1982 \\
+  Citizenship: Italy\\
+  Status: EB-2 (green-card)
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+  Mobile: +1 787 210 5525\\
+  Work Email: \href{mailto:andrea@turinggroup.com}{\tt andrea@turinggroup.com} \\
+  Personal Email: \href{mailto:cadedduan@gmail.com}{\tt cadedduan@gmail.com} \\
+  \textit{Other Languages: (\href{http://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages}{\tt CEFR} )} 
+
+Spanish C1,
+English C2, 
+French C1,
+Catalan A2.
+
+\end{minipage}
+
+\section*{Current Position}
+
+\begin{itemize}
+\item Principal Software Architect, Turing Group, since Aug 2017. 
+
+\textit{Responsible for Client relationship, team lead, training and management, project ideation, planning and architecture, development.}
+
+\end{itemize}
+\section*{Education}
+
+\begin{itemize}
+
+  \item  Ph.D. Physical Chemistry, Institut de Science et d'Ing\'enierie Supramol\'eculaires (\href{http://www-isis.u-strasbg.fr/}{\texttt{ISIS}}), Universit\'e de Strasbourg , 17 December 2012.
+
+  \item  M.Sc Material Science, University of Cagliari , 2008.
+
+  \item B.Sc Material Science University of Milan Bicocca, 2006.
+  
+\end{itemize}
+
+
+\section*{Certificates}
+\begin{itemize}
+  \item  AWS Certified DevOPS Engineer - Professional
+  \item  AWS Certified Developer - Associate
+\end{itemize}
+
+
+
+\section*{Skills}
+
+\begin{itemize}
+  \item  AWS, Serverless, JavaScript, Python, Java, Html5, CSS, Node, Angular, React, Vagrant, Puppet, Ansible, Docker, AWS, Adobe AEM/CQ. some Clojure, some Haskell, some Go.
+\end{itemize}
+
+\section*{Research Fields}
+Machine Learning, Chemical Networks, Nanochemistry, Scanning Tunneling Microscopy, Physical Chemistry, Molecular Dynamics;
+
+\section*{Research}
+
+\begin{itemize}
+\item Chemistry as a Natural Language.
+\item Machine-Learning Retrosynthesis.
+\end{itemize}
+
+
+\section*{Professional Activities}
+
+\begin{itemize}
+% 
+
+\item \href{http://www.turinggroup.com}{Turing Group} - Software Architect,  Chicago  IL, April 2016 - August 2017 
+
+\textit{Responsible for Client relationship, project ideation, development and training. }
+\item \href{http://www.hyatt.com}{Hyatt.com} -  Full Stack Developer, Hyatt corporate office,  Chicago  IL, April 2014 - April 2016. 
+\item \href{http://www.chematica.net}{Chematica} - Lead Software Engineer and Post Doctoral Fellow , Northwestern University, Non Equilibrium Research Center, Evanston IL, USA. February 2013 - April 2014.
+\item Domtree.net - hackaton 2013 -  graph rapresentation of DOM structure of URLs
+ \item  Lead Sulfide colloidal nanocrystal synthetic Protocol and pipeline Development, Seed Projects -  INFM Call for Young Research. INFM:CNR
+   Cagliari University may-october 2009.
+% 
+\end{itemize}
+\section*{Publications}
+\begin {itemize}
+\item       \textit{Atomically Precise Prediction of 2D Self-Assembly of Weakly Bonded Nanostructures: STM Insight into Concentration-Dependent Architectures}. Small 2015.
+\item       \textit{Organic chemistry as a language and the implications of chemical linguistics for structural and retrosynthetic analyses}. Angewandte Chemie, Volume 126, Issue 31, pages 8246-8250, July 28, 2014
+\item 	    \textit{Concentration Dependent Supramolecular Engineering of H-bonded Nanostructures at Surfaces: Predicting Self-assembly in 2D}. Journal of the American Chemical Society 2013. doi:10.1021/ja4002025.
+\item  \textit{Modulating the self-assembly of rigid clicked dendrimers at the solid-liquid interface}, Chemical Communications, 2011, 47, 10578-10580.
+\item  \textit{
+Self-templating 2D supramolecular networks: a new avenue to reach control over a bilayer formation}, Nanoscale, 2011, 3, 4125-4129.
+\end{itemize}
+
+
+
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}
